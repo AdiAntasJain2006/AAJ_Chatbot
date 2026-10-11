@@ -1,8 +1,31 @@
-myenv/
+
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# SQLite databases and temporary files
 *.db
 *.db-shm
 *.db-wal
-.env
-requirements.txt
-file_4.pdf
+*.sqlite
+*.sqlite3
+
+# Editor settings
+.vscode/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
